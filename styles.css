@@ -61,6 +61,9 @@ body {
   .image-header {
     background-color: #3b3a41;
     color: #ffffff;
+    flex-basis: 50vh;
+    flex-grow: 0;
+    flex-shrink: 0;
   }
   
   
@@ -68,4 +71,3 @@ body {
     background-color: #f6f7fa;
     color: #333333;
   }
- 
