@@ -50,12 +50,12 @@ body {
   .main-content {
     flex: 1;
     overflow: hidden;
-    text-align: center;
+    /*text-align: center;*/
     transition: all 0.3s;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /*justify-content: center;*/
+    /*align-items: center;*/
   }
   
   .image-header {
@@ -70,4 +70,65 @@ body {
   .main-content {
     background-color: #f6f7fa;
     color: #333333;
+    padding-top: 140px;
+  }
+
+  .form-input{
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 40px 60px;
+  }
+
+  label,input{
+    display: block;
+  }
+  .group1, .group2, .group3{
+    display: flex;
+    gap: 60px;
+  }
+
+  .form-input > p{
+    margin-top: -5px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: -5px;
+  }
+
+  .form-input > div{
+    padding-top: 20px;
+  }
+
+  .main-content > div{
+    padding-left: 60px;
+    font-size: 1.4rem;
+    font-weight: 900;
+    padding-bottom: 40px;
+  }
+  .form-submission{
+    padding-left: 60px;
+    padding-top: 30px;
+  }
+  
+  label{
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+    font-weight: 900;
+    color:rgb(110, 109, 109);
+  }
+
+  button{
+    padding:10px 50px;
+    font-size: 1.1rem;
+    color:white;
+    background-color: orange;
+    border-radius: 0.5rem;
+    border: 1px solid orange;
+  }
+  .form-submission > p{
+    margin-top: 30px;
+    font-weight: 900;
+  }
+  a{
+    color: orange;
+    text-decoration: none;
   }
