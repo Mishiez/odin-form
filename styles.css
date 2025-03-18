@@ -26,6 +26,13 @@ body{
 }
 **/
 
+.logo-name {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+
 body {
     margin: 0 auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -72,7 +79,19 @@ body {
     color: #333333;
     padding-top: 140px;
   }
+  form{
+    z-index: 4;
+  }
 
+  .logo > img{
+    width:12vw;
+    height: 24vh;
+  }
+
+  .background-image{
+    height:100vh;
+    z-index: 1;
+  }
   .form-input{
     background-color: white;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -132,3 +151,43 @@ body {
     color: orange;
     text-decoration: none;
   }
+
+  .logo-header{
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 1.5;
+    transition: .3s ease;
+    background: transluscent;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+
+    
+  }
+  .logo{
+    position: absolute;
+    left: 16%;
+    bottom: 70%;
+    z-index: 2;
+}
+.logo-name{
+    position: absolute;
+    left: 25%;
+    bottom: 76%;
+    color:rgba(248, 135, 5, 0.774);
+    font-size:8rem;
+
+}
+
+input[type="password"]:invalid{
+  border: 2px solid red;
+}
+
+input:valid{
+  border: 2px solid rgba(0, 0, 0, 0.418);
+}
+

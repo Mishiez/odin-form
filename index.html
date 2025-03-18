@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up-Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <div class="image-header">
-            <img src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2Fyc3xlbnwwfHwwfHx8MA%3D%3D" alt="Car-image">
-            <span class="logo"><img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="">ODIN</span>
+            <img class="background-image" src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2Fyc3xlbnwwfHwwfHx8MA%3D%3D" alt="Car-image">
+            <span class="logo-header">
+                <span class="logo"><img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt=""></span>
+                <span class="logo-name">ODIN</span>
+            </span>
         </div>
         
         <div class="main-content">
@@ -19,7 +25,7 @@
                 <p>You know you want to.</p>
             </div>
         
-            <form action="">
+            <form>
                 <div class="form-input">
                     
                     <p>Let's do this!</p>
@@ -27,12 +33,12 @@
                     <div class="group1">
                         <div>
                             <label for="first_name">FIRST NAME</label>
-                            <input type="text" id="first_name" name="first_name">
+                            <input type="text" id="first_name" name="first_name" placeholder="Thor">
                         </div>
             
                         <div>
                             <label for="last_name">LAST NAME</label>
-                            <input type="text" id="last_name" name="last_name">
+                            <input type="text" id="last_name" name="last_name" placeholder="Odinson">
                         </div>
                         <br>
                     </div>
@@ -54,19 +60,19 @@
                     <div class="group3"> 
                         <div>
                             <label for="psw">PASSWORD</label>
-                            <input type="password" id="psw" name="psw">
+                            <input type="password" id="psw" name="psw" required>
                         </div>
             
                         <div>
                             <label for="psw_repeat">CONFIRM PASSWORD</label>
-                            <input type="password" id="psw_repeat" name="psw_repeat">
+                            <input type="password" id="psw_repeat" name="psw_repeat" required>
                         </div>
                         <br>
                     </div>
                 </div>
         
                 <div class="form-submission">
-                    <button>Create Account</button>
+                    <button type="submit">Create Account</button>
                     <p>Already have an account? <a href="http://">Log in</a></p>
                 </div>
             </form>
